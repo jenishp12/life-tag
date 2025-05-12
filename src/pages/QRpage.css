@@ -1,0 +1,135 @@
+.qr-page-container {
+    padding: 90px;
+    text-align: center;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-section img {
+    width: 150px;
+    height: 150px;
+    margin: 20px 0;
+}
+
+.profile-info, .health-summary {
+    background-color: white;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.profile-info h2, .health-summary h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.profile-info p, .health-summary p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.emergency-call {
+    background-color: #e53935;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.emergency-call:hover {
+    background-color: #d32f2f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.translate-section {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.translate-section button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.translate-section button:hover {
+    background-color: var(--primary-color-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.last-updated {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Language Selector Styles */
+.language-selector {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background-color: white;
+    color: var(--text-color);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.language-selector:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.language-selector:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .qr-page-container {
+        padding: 1rem;
+    }
+
+    .profile-info, .health-summary {
+        width: 95%;
+    }
+
+    .translate-section {
+        flex-direction: column;
+    }
+
+    .translate-section button {
+        width: 100%;
+    }
+}
