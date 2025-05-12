@@ -11,15 +11,19 @@ This is a hackathon project built using the MERN stack. LifeTag provides emergen
 ## Installation and Usage
 
 1. **Clone the repository:**
-   `git clone https://github.com/jenishp12/life-tag.git`
+   ```bash
+   git clone https://github.com/jenishp12/life-tag.git
 
-2. **Navigate into the project directory:**
-   `cd life-tag`
+3. **Navigate into the project directory:**
+   ```bash
+   cd life-tag
 
-3. **Install dependencies:**
-   `npm install`
+5. **Install dependencies:**
+   ```bash
+   npm install
 
-4. **Run the development server:**
-   `npm start`
+7. **Run the development server:**
+   ```bash
+   npm start
    
 This will start the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
